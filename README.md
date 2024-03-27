@@ -9,6 +9,14 @@ This repository hosts an implementation of the Advanced Encryption Standard (AES
 - **C Implementation**: Implemented in C for optimal performance and versatility.
 - **Debugging Tools**: Employed tools like GDB and Valgrind for debugging and ensuring code quality.
 
+## Components
+
+- **encrypt.c**: This component of the program contains the main method, and it uses functionality from the other components to perform AES encryption and write out ciphertext.
+- **decrypt.c**: This component of the program contains the main method, and it uses functionality from the other components to perform AES decryption and write out plaintext.
+- **io.c** and **io.h**: This component handles the reading and writing of information from binary files. The header file includes majority of the documentation.
+- **aes.c** and **aes.h**: This component provides the implementation of functions required to encrypt and decrypt a file, such as the generation of subkeys and the gFunction. The header file includes majority of the documentation.
+- **field.c** and **field.h**: This component implements functions for addition, subtraction, and multiplication in the 8-bit Galois field used by AES. The header files includes majority of the documentation.
+
 ## Usage
 
 1. **Clone the Repository**: Clone this repository to your local machine.
@@ -23,12 +31,12 @@ This repository hosts an implementation of the Advanced Encryption Standard (AES
 
 3. **Encrypt Data**: Utilize the executable to encrypt your data.
    ```bash
-   ./aes encrypt <input_file> <output_file>
+   ./encrypt <key-file> <input_file> <output_file>
    ```
 
 4. **Decrypt Data**: Decrypt encrypted data using the executable.
    ```bash
-   ./aes decrypt <input_file> <output_file>
+   ./decrypt <key-file> <input_file> <output_file>
    ```
    
 ## Debugging Tools
