@@ -16,9 +16,9 @@ This repository hosts an implementation of the Advanced Encryption Standard (AES
    git clone https://github.com/your-username/AdvancedEncryptionStandardProject.git
    ```
 
-2. **Build**: Compile the source code to generate the executable.
+2. **Build**: Compile the source code using the Makefile to generate the executable.
    ```bash
-   gcc aes.c -o aes
+   make
    ```
 
 3. **Encrypt Data**: Utilize the executable to encrypt your data.
