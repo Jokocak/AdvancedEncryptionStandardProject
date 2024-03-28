@@ -16,28 +16,6 @@ This repository hosts an implementation of the Advanced Encryption Standard (AES
 - **io.c** and **io.h**: This component handles the reading and writing of information from binary files. The header file includes majority of the documentation.
 - **aes.c** and **aes.h**: This component provides the implementation of functions required to encrypt and decrypt a file, such as the generation of subkeys and the gFunction. The header file includes majority of the documentation.
 - **field.c** and **field.h**: This component implements functions for addition, subtraction, and multiplication in the 8-bit Galois field used by AES. The header files includes majority of the documentation.
-
-## Usage
-
-1. **Clone the Repository**: Clone this repository to your local machine.
-   ```bash
-   git clone https://github.com/your-username/AdvancedEncryptionStandardProject.git
-   ```
-
-2. **Build**: Compile the source code using the Makefile to generate the executable.
-   ```bash
-   make
-   ```
-
-3. **Encrypt Data**: Utilize the executable to encrypt your data.
-   ```bash
-   ./encrypt <key-file> <input_file> <output_file>
-   ```
-
-4. **Decrypt Data**: Decrypt encrypted data using the executable.
-   ```bash
-   ./decrypt <key-file> <input_file> <output_file>
-   ```
    
 ## Debugging Tools
 
